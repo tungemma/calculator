@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 10px;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    background-color: rgb(75, 45, 10);
+    width: 220px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3px;
+    border-radius: 12px;
+}
+.display input {
+    border: 1px solid greenyellow;
+    background-color: antiquewhite;
+    border-radius: 18px;
+    width: 220px;
+  text-align: end;
+}
+.operators button {
+    background-color: blueviolet;
+    color: bisque;
+    font-size: 14px;
+    border-radius: 12px;
+
+}
+button {
+    width: 50px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.buttons, .operators, .sp-buttons {
+    border: 3px solid yellow;
+    border-radius: 12px;
+    max-width: 50%vh;
+    display:grid;
+    gap: 5px;
+    grid-template-columns: repeat(4,50px);
+}
+.sp-buttons>button{
+    background-color: aquamarine;
+}
